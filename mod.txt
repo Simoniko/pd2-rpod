@@ -1,0 +1,21 @@
+{
+  	"name" : "RPOD: Random Pager On Domination",
+    	"description" : "If a guard is dominated, there is a 20% chance of him not having a pager \n (if you kill the guard, you still have to answer). Max uses - 3 times.",
+    	"author" : "Simoniko",
+	"contact" : "https://modworkshop.net/mod/39820",
+	"version" : "v1.1",
+	"blt_version" : "2",
+	"undisablable" : false,
+	"updates" : [
+    	{
+			"identifier" : "rpod",
+			"host": {
+				"meta": "https://raw.githubusercontent.com/Simoniko/pd2-rpod-autoupdate/master/META-random_pager_on_domination.json",
+			}
+		}
+	],
+	"hooks" : [
+
+   { "hook_id" : "lib/units/enemies/cop/logics/coplogicintimidated", "script_path" : "intimidated.lua" }
+]
+}
